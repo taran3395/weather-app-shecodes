@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="first-block">
+        <div class="enter-city">
+          <form id="enter-city">
+            <input type="text" class="city-box" id="city-box" />
+
+            <input type="submit" id="enter-city-name" value="Enter" />
+          </form>
+        </div>
+
+        <div class="row first-line">
+          <div class="col-3 column-first">
+            <div class="temperature">
+              <span id="temperature-number">31</span><span>°C</span
+              ><span
+                ><button class="convert" id="cf-convert">°C/°F</button></span
+              >
+            </div>
+            <div class="temperature-description">Partly Cloudy</div>
+            <div class="temperature-emoji">⛅️</div>
+          </div>
+          <div class="col-5 column-second">
+            <div id="city-country">Tehran, Iran</div>
+            <div class="day-date" id="current-time">day</div>
+            <div class="high-low">36°C 24°C</div>
+          </div>
+          <div class="col-4 column-third">
+            <div class="percipitation">percipitation: 0%</div>
+            <div class="humidity">humidity: 18%</div>
+            <div class="wind">wind: 18km/h</div>
+          </div>
+        </div>
+      </div>
+      <div class="second-block">
+        <div class="row second-line">
+          <div class="col">
+            <div class="day">Wednesday</div>
+            <div class="weather-emoji">🌤</div>
+            <div class="daily-high">36°C</div>
+            <span class="daily-low">24°C</span>
+          </div>
+          <div class="col">
+            <div class="day">Thursday</div>
+            <div class="weather-emoji">🌤</div>
+            <div class="daily-high">36°C</div>
+            <span class="daily-low">24°C</span>
+          </div>
+          <div class="col">
+            <div class="day">Friday</div>
+            <div class="weather-emoji">🌤</div>
+            <div class="daily-high">36°C</div>
+            <span class="daily-low">24°C</span>
+          </div>
+          <div class="col">
+            <div class="day">Saturday</div>
+            <div class="weather-emoji">🌤</div>
+            <div class="daily-high">36°C</div>
+            <span class="daily-low">24°C</span>
+          </div>
+          <div class="col">
+            <div class="day">Sunday</div>
+            <div class="weather-emoji">🌤</div>
+            <div class="daily-high">36°C</div>
+            <span class="daily-low">24°C</span>
+          </div>
+        </div>
+      </div>
+<div class="third-block">
+  <div class="row third-row">
+    <div class="col">
+        <button id="current-location">Current Location</button>
+    </div>
+    <div class="col info">
+        <ul>
+            <li id="city">City</li>
+            <li id="temp">Temperature</li>
+            <li id="lat">Latitude</li>
+            <li id="long">Longitude</li>
+          </ul>
+    </div>
+  </div>
+</div>
+
+
+
+  
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
